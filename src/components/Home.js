@@ -6,7 +6,7 @@ const products = [
     id: 1,
     name: "Tênis Esportivo",
     price: 159.99,
-    image: "/produtos/tenis/tenisHome.avif",
+    image: "/produtos/tenis/tenisHome.png",
   },
   {
     id: 2,

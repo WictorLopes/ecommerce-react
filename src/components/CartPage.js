@@ -92,7 +92,7 @@ function CartPage() {
               type="text"
               value={cep}
               onChange={(e) => {
-                const rawValue = e.target.value.replace(/\D/g, ""); // Remove tudo que não for número
+                const rawValue = e.target.value.replace(/\D/g, "");
                 const formatted =
                   rawValue.slice(0, 5) +
                   (rawValue.length > 5 ? "-" + rawValue.slice(5, 8) : "");
