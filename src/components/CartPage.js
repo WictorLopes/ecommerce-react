@@ -55,7 +55,6 @@ function CartPage() {
             </div>
           ) : (
             <>
-              {/* Itens do Carrinho */}
               <div className="space-y-6 mb-8">
                 {cart.map((item, idx) => (
                   <div
@@ -92,7 +91,6 @@ function CartPage() {
                 ))}
               </div>
 
-              {/* Seção de Frete */}
               <div className="mb-8 p-6 bg-gray-50 rounded-xl border border-gray-200">
                 <h2 className="text-2xl font-semibold text-gray-900 mb-4">
                   🚚 Calcular Frete
@@ -173,7 +171,6 @@ function CartPage() {
                 )}
               </div>
 
-              {/* Resumo e Ações */}
               <div className="border-t pt-6">
                 <div className="flex flex-col sm:flex-row justify-between items-center gap-4 mb-6">
                   <div className="text-2xl font-bold text-gray-900">

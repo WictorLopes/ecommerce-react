@@ -29,7 +29,7 @@ function ProductDetails() {
       selectedImage,
     };
     addToCart(productWithSelection);
-    toast.success(`${product.name} adicionado ao carrinho!`, { duration: 500 });
+    toast.success(`${product.name} adicionado ao carrinho!`, { duration: 1000 });
     setAddedToCart(true);
   };
 
@@ -44,7 +44,6 @@ function ProductDetails() {
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-12">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row gap-12 bg-white rounded-2xl shadow-xl p-8">
-          {/* Seção de Imagens */}
           <div className="flex-1">
             <div className="relative mb-6">
               <img
@@ -70,7 +69,6 @@ function ProductDetails() {
             </div>
           </div>
 
-          {/* Seção de Detalhes */}
           <div className="flex-1 flex flex-col gap-6">
             <div>
               <h1 className="text-4xl font-extrabold text-gray-900 mb-2">
@@ -114,10 +112,10 @@ function ProductDetails() {
             <div className="flex flex-col gap-4 mt-6">
               <button
                 onClick={handleAddToCart}
-                disabled={addedToCart} // Desabilita durante a animação
+                disabled={addedToCart}
                 className={`w-full px-6 py-3 rounded-lg font-semibold transition-all duration-300 shadow-md ${
                   addedToCart
-                    ? "bg-green-500 text-white cursor-not-allowed scale-105" // Estado animado
+                    ? "bg-green-500 text-white cursor-not-allowed scale-105"
                     : "bg-green-500 hover:bg-green-600 text-white hover:shadow-lg"
                 }`}
                 aria-label={`Adicionar ${product.name} ao carrinho`}
